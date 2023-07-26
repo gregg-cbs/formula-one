@@ -1,0 +1,59 @@
+.table-wrapper {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .rdt_TableHead{
+    font-size: 16.927px;
+    font-weight: 500;
+    line-height: 26.599px;
+    height: 67px;
+  }
+
+  .rdt_TableCol_Sortable {
+    [sortdirection] {
+      margin-left: 12px;
+      opacity: 1;
+      font-size: 10px;
+      transform: scaleY(0.74);
+    }
+    [sortdirection="desc"] {
+      transform: scaleY(0.74) rotate(180deg);;
+    }
+  }
+
+  img {
+    display: block;;
+  }
+}
+
+.table-filter {
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 4px;
+  background: #EFEFEF;
+
+  font-size: 12px;
+  font-style: normal;
+  line-height: 20.4px;
+
+  .table-filter-inner {
+    width: 158px;
+    padding: 10px 16px;
+    gap: 10px;
+    border-radius: 4px;
+    background: #FFF; 
+    overflow-y: auto;
+  }
+  .table-filter-item {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px 0;
+  }
+  .table-filter-item-clear {
+
+  }
+}
